@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    
+    
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="assets/fifa_russia_logo.png" alt="FIFA Russia" id="logo"> 
+       <h1>Exploring FIFA World Cup Statistics: Homework 2</h1>  
+       <div>Name:SURYA; E-Mail:SURSURYA779@GMAIL.COM</div>
+    </header>
+
+     <div id="barchart" class="get">
+    <h2 >Bar Chart </h2>
+
+    <div id="plot" >
+        <label style="font-weight:bold">Plot:</label>
+        <select id="dataset" onchange="Change()" >
+        <option selected value="TEAMS"  onchange="Teams()">TEAMS</option>
+        <option value="AVERAGE_ATTENDANCE">AVERAGE_ATTENDANCE</option>
+        <option value="MATCHES">MATCHES</option>
+        <option value="GOALS">GOALS</option>
+        </select>
+        </div> 
+        
+        <div id="graph">
+        
+        </div>
+    
+</div>
+
+<script src="./script.js">
+
+d3.select("input").on("change".toggleSort);
+
+
+</script>
+
+</body>
+
+
+
+
+</html>
